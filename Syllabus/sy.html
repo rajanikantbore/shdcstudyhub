@@ -1,0 +1,2813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Syllabus - Sri Harsha Study Hub</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+      <div class="d-flex align-items-center">
+        <img src="/logoshdc.png" width="45" class="me-2" />
+        <div>
+          <h5 class="mb-0 text-white">Sri Harsha Study Hub</h5>
+          <small class="text-white">Made for Students, by Students</small>
+        </div>
+      </div>
+
+      <div class="ms-auto">
+        <a class="btn btn-light btn-sm" href="/index.html">Home</a>
+        <a class="btn btn-light btn-sm" href="/Syllabus/sy.html">Syllabus</a>
+        <a class="btn btn-light btn-sm" href="/Notes/notes.html">Notes</a>
+        <a class="btn btn-light btn-sm" href="/QuestionPapers/papers.html">Question Papers</a>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">📘 Syllabus</h2>
+
+      <!-- Search -->
+      <input
+        type="text"
+        class="form-control mb-3"
+        placeholder="Search subject..."
+        onkeyup="filterSubjects(this.value)"
+      />
+
+      <!-- Tabs -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <button
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#bsc"
+          >
+            B.SC
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bcom">
+            B.COM
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bba">
+            BBA
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#telugu"
+          >
+            TELUGU
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#english"
+          >
+            ENGLISH
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#sanskrit"
+          >
+            SANSKRIT
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#general-electives"
+          >
+            GENERAL ELECTIVES
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#sec-papers"
+          >
+            SEC PAPERS
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-4">
+        <!-- BSC -->
+        <div class="tab-pane fade show active" id="bsc">
+          <select class="form-select mb-3" onchange="filterBranch(this.value)">
+            <option value="all">ALL BRANCHES</option>
+            <option value="math">MATHEMATICS</option>
+            <option value="stats">STATISTICS</option>
+            <option value="ds">DATA SCIENCE</option>
+            <option value="physics">PHYSICS</option>
+            <option value="cs">COMPUTER SCIENCE</option>
+            <option value="botany">BOTANY</option>
+            <option value="zoology">ZOOLOGY</option>
+            <option value="chemistry">CHEMISTRY</option>
+            <option value="food">FOOD SCIENCE</option>
+            <option value="nutrition">NUTRITION AND DIETETICS</option>
+          </select>
+
+          <div class="list-group subject-list" id="bscSubjects">
+            <!-- cs -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Programming in C
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Programming in C++
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Data Structures with C++
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Database Management System
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Programming in Java
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-cs"
+            >
+              Web Technologies
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- ds -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              Programming with C
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              Problem Solving in Python
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              Data Engineering with Python
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              Machine Learning
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              NoSQL Databases
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-ds"
+            >
+              Big Data
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- math -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Differential Calculus
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Differential Equations
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Real Analysis
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Algebra(Groups & Rings)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Linear Algebra
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-math"
+            >
+              Solid Geometry
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- physics -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Mechanics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Thermal Physics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Electromagnetic Theory
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Waves and Optics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Modern Physics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-physics"
+            >
+              Electronics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- stats -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Descriptive Statistics and Probability
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Probability Distributions
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Statistical Methods and Theory of Estimation
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Statistical Inference
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Applied Statistics-I
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-stats"
+            >
+              Applied Statistics-II
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- botany -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Microbial world & Lower Plants
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Gymnosperms & Plant Taxonomy
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Plant Anatomy & Embryology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Plant Physiology & Cell Biology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Horticulture
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-botany"
+            >
+              Tissue Culture and bio-Technology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- zoology -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Animal Diversity Invertebrates
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Animal Diversity vertebrates
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Animal Physiology and Animal Behavior
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Cell Biology,Genetics & Development Biology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Immunology & Animal BioTechnology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-zoology"
+            >
+              Ecology,ZooGeography & Evolution
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- chemistry -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Chemistry-1
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Chemistry-2
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Chemistry-3
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Chemistry-4
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Spectroscopy and ChromatoGraphy
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-chemistry"
+            >
+              Medicinal Chemistry
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- food -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Food Chemistry Nutrition
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Food Microbiology,Sanitation and Hygiene
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Post Harvest Technology of Field Crop
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Technology of Animal Foods
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Technology of Fermented Foods & Beverages
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-food"
+            >
+              Web Technologies
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <!-- nutrition -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Introduction to Nutrition and Dietetics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Nutritional Biochemistry and Human Physiology
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Normal and Therapeutic Nutrition
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Diet in Disease
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Diet Therapy
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-nutrition"
+            >
+              Public Health Nutrition
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BCOM -->
+        <div class="tab-pane fade" id="bcom">
+          <select class="form-select mb-3" onchange="filterBranch(this.value)">
+            <option value="all">ALL SEMESTERS</option>
+            <option value="sem1">SEMESTER 1</option>
+            <option value="sem2">SEMESTER 2</option>
+            <option value="sem3">SEMESTER 3</option>
+            <option value="sem4">SEMESTER 4</option>
+            <option value="sem5">SEMESTER 5</option>
+            <option value="sem6">SEMESTERS 6</option>
+          </select>
+
+          <div class="list-group subject-list" id="bcomSubjects">
+            <!-- sem1 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Financial Accounting-I
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Financial Accounting-I(New)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Business Organization and Management
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Business Organization and Management (New)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Fundamentals of Information Technology (CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Fundamentals of Information Technology (CA)(New)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Data-Driven Decision Making(BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Data-Driven Decision Making(BA)(New)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <!-- sem2 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Financial Accounting-II
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Business Laws
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              programming With C & C++(CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Data Analytics and Essentials(BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <!-- sem3 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Advanced Accounting
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Business Statistics-I
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Relational Database Management System(CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Data Analytics Modeling(BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem4 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Income Tax
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Business Statistics-II
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Web Technologies (CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Forecasting & Predictive Analytics (BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem5 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Cost Accounting
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Computerized Accounting
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              E-Commerce (CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Advanced Data Visualization (BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem6 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem6"
+            >
+              Cost Control and Management Accounting
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem6"
+            >
+              Theory and Practice of GST
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem6"
+            >
+              Multimedia Systems (CA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem6"
+            >
+              Business Applications of Emerging Technologies (BA)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BBA -->
+
+        <div class="tab-pane fade" id="bba">
+          <select class="form-select mb-3" onchange="filterBranch(this.value)">
+            <option value="all">ALL SEMESTERS</option>
+            <option value="sem1">SEMESTER 1</option>
+            <option value="sem2">SEMESTER 2</option>
+            <option value="sem3">SEMESTER 3</option>
+            <option value="sem4">SEMESTER 4</option>
+            <option value="sem5">SEMESTER 5</option>
+            <option value="sem6">SEMESTERS 6</option>
+          </select>
+
+          <div class="list-group subject-list" id="bbaSubjects">
+            <!-- sem1 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Principles of Management
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Basics of Marketing
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem1"
+            >
+              Business Economics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem2 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Organizational Behavior
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Business Statistics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem2"
+            >
+              Financial Accounting
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem3 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Human Resource Management
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Information Technology for Business
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem3"
+            >
+              Financial Management
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem4 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Business Laws and Ethics
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Market Research
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem4"
+            >
+              Management Science
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+            <!-- sem5 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Financial Markets and Services(F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Brand Management (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Organization Development(HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Analysis of Investment in Financial Assets(F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Retail Management (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Performance Appraisal and Counseling (HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Insurance Services (F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Customer RelationshipManagement (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Compensation Management (HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <!-- sem6 -->
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Banking (F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Buyer Behavior (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Leadership And Change Management(HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Risk Analysis and Management(F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Advertising and Sales Promotion (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Talent And Knowledge Management (HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              International Finance (F)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_c.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Rural Marketing (M)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+
+            <div
+              class="list-group-item d-flex justify-content-between branch-sem5"
+            >
+              Employees Relations(HR)
+              <button
+                class="btn btn-primary btn-sm"
+                onclick="downloadPDF('pdfs/syllabus/bsc_ds.pdf')"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TELUGU -->
+        <div class="tab-pane fade" id="telugu">
+          <select class="form-select mb-3">
+            <option>TELUGU (SEM-1)</option>
+            <option>TELUGU (SEM-2)</option>
+            <option>TELUGU (SEM-3)</option>
+            <option>TELUGU (SEM-4)</option>
+            <option>TELUGU (SEM-5)</option>
+            <option>TELUGU (SEM-6)</option>
+          </select>
+
+          <div class="list-group subject-list">
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-1 (OLD)
+              <a
+                href="./syllabusData/TELUGU OLD/Telugu (sem-1)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-2 (OLD)
+              <a
+                href="./syllabusData/TELUGU OLD/telugu(sem-2)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-3 (OLD)
+              <a
+                href="./syllabusData/TELUGU OLD/Telugu(sem-3).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-4 (OLD)
+              <a
+                href="./syllabusData/TELUGU OLD/telugu(sem4)old"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-5 (OLD)
+              <a
+                href="./syllabusData/TELUGU OLD/Telugu (Sem-5)old"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              TELUGU SEM-6 (OLD)
+              <a
+                href="./syllabusData/TELUGU  SYLLABUS OLD/Telugu (Sem-6)"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ENGLISH -->
+
+        <div class="tab-pane fade" id="english">
+          <select class="form-select mb-3">
+            <option>ENGLISH(SEM-1)(OLD)</option>
+            <option>ENGLISH (SEM-1)(NEW)</option>
+            <option>ENGLISH(SEM-2)(OLD)</option>
+            <option>ENGLISH (SEM-2)(NEW)</option>
+            <option>ENGLISH(SEM-3)(OLD)</option>
+            <option>ENGLISH(SEM-4)(OLD)</option>
+            <option>ENGLISH(SEM-5)(OLD)</option>
+            <option>ENGLISH(SEM-6)(OLD)</option>
+          </select>
+
+          <div class="list-group subject-list">
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-1 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/english(sem-1)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-1 (NEW)
+              <a
+                href="./syllabusData/ENGLISH SYLLABUS OLD/ENGLISH (SEM-2) (NEW).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-2 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/english (sem-2)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-2 (NEW)
+              <a
+                href="./syllabusData/ENGLISH SYLLABUS OLD/ENGLISH (SEM-2) (NEW).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-3 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/English (sem-3)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-4 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/English (Sem-4)old.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-5 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/english sem-5(old).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              ENGLISH SEM-6 (OLD)
+              <a
+                href="./syllabusData/ENGLISH OLD/english sem-6 (old).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- sanskrit -->
+
+        <div class="tab-pane fade" id="sanskrit">
+          <select class="form-select mb-3">
+            <option>SANSKRIT(SEM-1)</option>
+            <option>SANSKRIT(SEM-2)</option>
+            <option>SANSKRIT(SEM-3)</option>
+            <option>SANSKRIT(SEM-4)</option>
+            <option>SANSKRIT(SEM-5)</option>
+            <option>SANSKRIT(SEM-6)</option>
+          </select>
+
+          <div class="list-group subject-list">
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-1)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-2)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-3)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-4)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-5)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              SANSKRIT(SEM-6)
+              <a href="." class="btn btn-primary btn-sm" download>Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- general elective -->
+
+        <div class="tab-pane fade" id="general-electives">
+          <select class="form-select mb-3">
+            <option>ENVIRONMENTAL STUDIES (SEM-1)</option>
+            <option>FUNDAMENTALS OF COMPUTERS(SEM-2)</option>
+            <option>FUNDAMENTALS OF NANOTECHNOLOGY(SEM-3)</option>
+            <option>BIO-STATISTICS(SEM-3)</option>
+            <option>FUNDAMENTALS OF PYTHON(SEM-4)</option>
+            <option>
+              REMEDIAL METHODS OF POLLUTION , DRINKING WATER(SEM-4)
+            </option>
+            <option>WATER RESOURCE MANAGEMENT(SEM-5)</option>
+            <option>DATA STRUCTURES AND ALGORITHM (SEM-5)</option>
+            <option>HEALTH AND HYGIENE (SEM-6)</option>
+          </select>
+
+          <div class="list-group subject-list">
+            <div class="list-group-item d-flex justify-content-between">
+              ENVIRONMENTAL STUDIES (SEM-1)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES SYLLABUS/Environmental Studies (sem-1).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              FUNDAMENTALS OF COMPUTERS(SEM-2)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/FUNDAMENTALS OF COMPUTERS (sem2).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              FUNDAMENTALS OF NANOTECHNOLOGY(SEM-3)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/FUNDAMENTALS OF NANO TECHNOLOGY(sem-3).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              BIO-STATISTICS(SEM-3)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/BioStatistics(sem-3).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              FUNDAMENTALS OF PYTHON(SEM-4)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/fundamentals of python(sem-4).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              REMEDIAL METHODS OF POLLUTION , DRINKING WATER(SEM-4)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/Remedial methods of pollution ,drinking water(sem4).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              WATER RESOURCE MANAGEMENT(SEM-5)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES/water resource management (sem-5).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              DATA STRUCTURES AND ALGORITHM (SEM-5)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES SYLLABUS/DATA STRUCTURES AND ALGORITHM (SEM-5).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              HEALTH AND HYGIENE (SEM-6)
+              <a
+                href="./syllabusData/GENERAL ELECTIVES SYLLABUS/public health and hygiene (sem-6).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- sec papers -->
+
+        <div class="tab-pane fade" id="sec-papers">
+          <select class="form-select mb-3">
+            <option>PRACTICE OF LIFE INSURANCE (SEM-2)</option>
+            <option>PRINCIPLE OF INSURANCE (SEM-2)</option>
+            <option>PRACTICE OF GENERAL INSURANCE (SEM-3)</option>
+            <option>REGULATIONS OF INSURANCE BUSINESS (SEM-3)</option>
+          </select>
+
+          <div class="list-group subject-list">
+            <div class="list-group-item d-flex justify-content-between">
+              PRACTICE OF LIFE INSURANCE (SEM-2)
+              <a
+                href="./syllabusData/SEC PAPERS SYLLABUS/PRACTICE OF LIFE INSURANCE (SEM-2).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              PRINCIPLE OF INSURANCE (SEM-2)
+              <a
+                href="./syllabusData/SEC PAPERS SYLLABUS/PRINCIPLES OF INSURANCE (SEM-2).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              PRACTICE OF GENERAL INSURANCE (SEM-3)
+              <a
+                href="./syllabusData/SEC PAPERS SYLLABUS/PRACTICE OF GENERAL INSURANCE (SEM-3).pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between">
+              REGULATIONS OF INSURANCE BUSINESS (SEM-3)
+              <a
+                href="./syllabusData/SEC PAPERS SYLLABUS/REGULATION OF INSURANCE BUSINESS (SEM-3)OLD.pdf"
+                class="btn btn-primary btn-sm"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDF Modal -->
+    <div class="modal fade" id="pdfModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">PDF Preview</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <iframe id="pdfFrame" width="100%" height="600"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BSC -->
+
+    <script>
+      function openPDF(file) {
+        document.getElementById("pdfFrame").src = file;
+        new bootstrap.Modal(document.getElementById("pdfModal")).show();
+      }
+
+      const bscSubjects = {
+        cs: [
+          {
+            name: "Programming in C",
+            pdf: "syllabusData/bsc syllabus/computer science/programming in c (sem1)old.pdf",
+          },
+          {
+            name: "Programming in C++",
+            pdf: "syllabusData/bsc syllabus/computer science/programming in c++(sem-2)old.pdf",
+          },
+          {
+            name: "Data Structures with C++",
+            pdf: "syllabusData/bsc syllabus/computer science/data structures with c++(sem-3)old.pdf",
+          },
+          {
+            name: "Database Management System",
+            pdf: "syllabusData/bsc syllabus/computer science/database management system (sem-4)old.pdf",
+          },
+          {
+            name: "Programming in Java",
+            pdf: "syllabusData/bsc syllabus/computer science/programming in java (sem-5)old.pdf",
+          },
+          {
+            name: "Web Technologies",
+            pdf: "syllabusData/bsc syllabus/computer science/web technologies (sem-6)old.pdf",
+          },
+        ],
+
+        ds: [
+          {
+            name: "Programming with C",
+            pdf: "syllabusData/bsc syllabus/data science/Programming with C (sem-1).pdf",
+          },
+          {
+            name: "Problem Solving and Python Programming",
+            pdf: "syllabusData/bsc syllabus/data science/Problem Solving and Python Programming (sem-2).pdf",
+          },
+          {
+            name: "Data Engineering with Python",
+            pdf: "syllabusData/bsc syllabus/data science/Data Engineering with Python (sem-3).pdf",
+          },
+          {
+            name: "Machine Learning",
+            pdf: "syllabusData/bsc syllabus/data science/Machine Learning (sem-4).pdf",
+          },
+          {
+            name: "NoSQL Databases",
+            pdf: "syllabusData/bsc syllabus/data science/NoSQL Databases (sem-5).pdf",
+          },
+          {
+            name: "Big Data",
+            pdf: "syllabusData/bsc syllabus/data science/Big Data (sem-6).pdf",
+          },
+        ],
+
+        math: [
+          {
+            name: "Differential Calculus",
+            pdf: "syllabusData/bsc syllabus/mathematics/differential calculus (sem1)old.pdf",
+          },
+          {
+            name: "Differential Equations",
+            pdf: "syllabusData/bsc syllabus/mathematics/differential equations (sem2)old.pdf",
+          },
+          {
+            name: "Real Analysis",
+            pdf: "syllabusData/bsc syllabus/mathematics/real analysis (sem3)old.pdf",
+          },
+          {
+            name: "Algebra(Groups & Rings)",
+            pdf: "syllabusData/bsc syllabus/mathematics/algebra (sem 4) old.pdf",
+          },
+          {
+            name: "Linear Algebra",
+            pdf: "syllabusData/bsc syllabus/mathematics/linear algebra (sem 5) old.pdf",
+          },
+          {
+            name: "Solid Geometry",
+            pdf: "syllabusData/bsc syllabus/mathematics/solid geometry (sem-6) old.pdf",
+          },
+        ],
+
+        physics: [
+          {
+            name: "Mechanics",
+            pdf: "syllabusData/bsc syllabus/physics/Mechanics (sem-1).pdf",
+          },
+          {
+            name: "Thermal Physics",
+            pdf: "syllabusData/bsc syllabus/physics/Thermal Physics (sem-2).pdf",
+          },
+          {
+            name: "Electromagnetic Theory",
+            pdf: "syllabusData/bsc syllabus/physics/Electromagnetic Theory (sem-3).pdf",
+          },
+          {
+            name: "Waves and Optics",
+            pdf: "syllabusData/bsc syllabus/physics/Waves and Optics (sem-4).pdf",
+          },
+          {
+            name: "Modern Physics",
+            pdf: "syllabusData/bsc syllabus/physics/ModernPhysics (sem-5).pdf",
+          },
+          {
+            name: "Electronics",
+            pdf: "syllabusData/bsc syllabus/physics/Electronics (sem-6).pdf",
+          },
+        ],
+
+        stats: [
+          {
+            name: "Descriptive Statistics and Probability",
+            pdf: "syllabusData/bsc syllabus/statistics/descriptive statistics and probability ( sem 1)old.pdf",
+          },
+          {
+            name: "Probability Distributions",
+            pdf: "syllabusData/bsc syllabus/statistics/probability distribution (sem 2) old.pdf",
+          },
+          {
+            name: "Statistical Methods and Theory of Estimation",
+            pdf: "syllabusData/bsc syllabus/statistics/statistical methods and theory of estimation (sem 4)old.pdf",
+          },
+          {
+            name: "Statistical Inference",
+            pdf: "syllabusData/bsc syllabus/statistics/statistical inference (sem 4) old.pdf",
+          },
+          {
+            name: "Applied Statistics-I",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-1 (sem-5)old.pdf",
+          },
+          {
+            name: "Applied Statistics-II",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-2 (sem 6)old.pdf",
+          },
+        ],
+
+        botany: [
+          {
+            name: "Microbial world & Lower Plants",
+            pdf: "syllabusData/bsc syllabus/botany/microbial diversity of lower plants(sem-1)old.pdf",
+          },
+          {
+            name: "Gymnosperms & Plant Taxonomy",
+            pdf: "syllabusData/bsc syllabus/botany/gymnosperms,taxonomy of angiosperms and ecology (sem-2)old.pdf",
+          },
+          {
+            name: "Plant Anatomy & Embryology",
+            pdf: "syllabusData/bsc syllabus/botany/plant anatomy and embryology (sem-3)old.pdf",
+          },
+          {
+            name: "Plant Physiology & Cell Biology",
+            pdf: "syllabusData/bsc syllabus/botany/cell biology and plant physiology (sem-4)old.pdf",
+          },
+          {
+            name: "Horticulture",
+            pdf: "syllabusData/bsc syllabus/botany/horticulture (sem-5)old.pdf",
+          },
+          {
+            name: "Tissue Culture and bio-Technology",
+            pdf: "syllabusData/bsc syllabus/botany/tissue culture and biotechnology(sem-6)old.pdf",
+          },
+        ],
+
+        zoology: [
+          {
+            name: "Animal Diversity Invertebrates",
+            pdf: "syllabusData/bsc syllabus/zoology/Animal Diversity Invertebrates (sem-1)old.pdf",
+          },
+          {
+            name: "Animal Diversity vertebrates",
+            pdf: "syllabusData/bsc syllabus/zoology/Animal Diversity vertebrates(sem-2)old.pdf",
+          },
+          {
+            name: "Animal Physiology and Animal Behavior",
+            pdf: "syllabusData/bsc syllabus/zoology/Animal Physiology and Animal Behavior(sem-3)old.pdf",
+          },
+          {
+            name: "Cell Biology,Genetics & Development Biology",
+            pdf: "syllabusData/bsc syllabus/zoology/Cell Biology,Genetics & Development Biology(sem-4)old.pdf",
+          },
+          {
+            name: "Immunology & Animal BioTechnology",
+            pdf: "syllabusData/bsc syllabus/zoology/Immunology & Animal BioTechnology (sem-5)old.pdf",
+          },
+          {
+            name: "Ecology,Geography & Evolution",
+            pdf: "syllabusData/bsc syllabus/zoology/Ecology,Geography & Evolution(sem-6)old.pdf",
+          },
+        ],
+
+        chemistry: [
+          {
+            name: "Chemistry-I",
+            pdf: "syllabusData/bsc syllabus/chemistry/chemistry-I(old).pdf",
+          },
+          {
+            name: "Chemistry-II",
+            pdf: "syllabusData/bsc syllabus/chemistry/chemistry-II (sem-2)old.pdf",
+          },
+          {
+            name: "Chemistry-III",
+            pdf: "syllabusData/bsc syllabus/chemistry/chemistry- III (sem-3)old.pdf",
+          },
+          {
+            name: "Chemistry-IV",
+            pdf: "syllabusData/bsc syllabus/chemistry/chemistry- IV (sem-4)old.pdf",
+          },
+          {
+            name: "Spectroscopy and ChromatoGraphy",
+            pdf: "syllabusData/bsc syllabus/chemistry/spectroscopy and chromatography(sem- V )old.pdf",
+          },
+          {
+            name: "Medicinal Chemistry",
+            pdf: "syllabusData/bsc syllabus/chemistry/medicinal chemistry(sem- VI)old.pdf",
+          },
+        ],
+
+        food: [
+          {
+            name: "Food Chemistry Nutrition",
+            pdf: "syllabusData/bsc syllabus/food science/Food Chemistry Nutrition(sem-1).pdf",
+          },
+          {
+            name: "Food Microbiology,Sanitation and Hygiene ",
+            pdf: "syllabusData/bsc syllabus/food science/Food Microbiology,Sanitation and Hygiene (sem-2).pdf",
+          },
+          {
+            name: "Post Harvest Technology of Field Crops",
+            pdf: "syllabusData/bsc syllabus/food science/Post Harvest Technology of Field Crops(sem-3).pdf",
+          },
+          {
+            name: "Technology of Animal Foods",
+            pdf: "syllabusData/bsc syllabus/food science/Technology of Animal Foods (sem-4).pdf",
+          },
+          {
+            name: "Technology of Fermented Foods and Beverages",
+            pdf: "syllabusData/bsc syllabus/food science/Technology of Fermented Foods and Beverages (sem-5).pdf",
+          },
+          {
+            name: "Food Safety,Quality Control and Sensory Evaluation",
+            pdf: "syllabusData/bsc syllabus/food science/Food Safety,Quality Control and Sensory Evaluation (sem-6).pdf",
+          },
+        ],
+
+        nutrition: [
+          {
+            name: "Introduction to Nutrition and Dietetics ",
+            pdf: "syllabusData/bsc syllabus/nutrition/Introduction to Nutrition and Dietetics (sem-1).pdf",
+          },
+          {
+            name: "Nutritional Biochemistry and Human Physiology",
+            pdf: "syllabusData/bsc syllabus/nutrition/Nutritional Biochemistry and Human Physiology (sem-2).pdf",
+          },
+          {
+            name: "Normal and Therapeutic Nutrition",
+            pdf: "syllabusData/bsc syllabus/nutrition/Normal and Therapeutic Nutrition (sem-3).pdf",
+          },
+          {
+            name: " Diet in Disease",
+            pdf: "syllabusData/bsc syllabus/nutrition/Diet in Disease(sem-4).pdf",
+          },
+          {
+            name: "Diet Therapy",
+            pdf: "syllabusData/bsc syllabus/nutrition/Diet Therapy(sem-5).pdf",
+          },
+          {
+            name: "Public Health Nutrition",
+            pdf: "syllabusData/bsc syllabus/nutrition/Public Health Nutrition (sem-6).pdf",
+          },
+        ],
+      };
+
+      /* LOAD SUBJECTS */
+
+      function loadBscSubjects(branch) {
+        let container = document.getElementById("bscSubjects");
+        container.innerHTML = "";
+
+        let subjects = [];
+
+        if (branch === "all") {
+          for (let key in bscSubjects) {
+            subjects = subjects.concat(bscSubjects[key]);
+          }
+        } else {
+          subjects = bscSubjects[branch] || [];
+        }
+
+        subjects.forEach((sub) => {
+          container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-primary btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+
+</div>
+`;
+        });
+      }
+
+      /* SEARCH */
+
+      function filterSubjects(value) {
+        let items = document.querySelectorAll(".subject-list .list-group-item");
+
+        items.forEach((item) => {
+          item.style.display = item.innerText
+            .toLowerCase()
+            .includes(value.toLowerCase())
+            ? "flex"
+            : "none";
+          b;
+        });
+      }
+
+      /* BRANCH FILTER */
+
+      function filterBranch(branch) {
+        loadBscSubjects(branch);
+      }
+
+      /* PAGE LOAD */
+
+      window.onload = function () {
+        loadBscSubjects("all");
+      };
+
+      function downloadPDF(file) {
+        const link = document.createElement("a");
+        link.href = file;
+        link.download = file.split("/").pop(); // file name
+        link.click();
+      }
+
+      subjects.forEach((sub) => {
+        container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-success btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+</div>
+`;
+      });
+    </script>
+
+    <!-- BCOM -->
+
+    <script>
+      function openPDF(file) {
+        document.getElementById("pdfFrame").src = file;
+        new bootstrap.Modal(document.getElementById("pdfModal")).show();
+      }
+
+      const bcomSubjects = {
+        sem1: [
+          {
+            name: " Financial Accounting-I",
+            pdf: "syllabusData/BCOM SYLLABUS/FINANCIAL ACCOUNTING-I (BCOM SEM-1).pdf",
+          },
+          {
+            name: " Financial Accounting-I (New)",
+            pdf: "syllabusData/BCOM SYLLABUS/FINANCIAL ACCOUNTING-I (BCOM SEM-1)NEW.pdf",
+          },
+          {
+            name: "Business Organization and Management",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS ORGANIZATION AND MANAGEMENT (BCOM SEM-1).pdf",
+          },
+          {
+            name: "Business Organization and Management(New)",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS ORGANIZATION AND MANAGEMENT (BCOM SEM-1)NEW.pdf",
+          },
+          {
+            name: "Fundamentals of Information Technology (CA)",
+            pdf: "syllabusData/BCOM SYLLABUS/FUNDAMENTALS OF INFORMATION TECHNOLOGY (BCOM CA)(SEM-1)OLD.pdf",
+          },
+          {
+            name: "Fundamentals of Information Technology (CA)(New)",
+            pdf: "syllabusData/BCOM SYLLABUS/FUNDAMENTALS OF INFORMATION TECHNOLOGY (BCOM CA)(SEM-1)NEW.pdf",
+          },
+          {
+            name: "Data-Driven Decision Making(BA)",
+            pdf: "syllabusData/BCOM SYLLABUS/DATA-DRIVEN DECISION MAKING (BCOM.BA)SEM-1.pdf",
+          },
+          {
+            name: "Data-Driven Decision Making(BA)(New)",
+            pdf: "syllabusData/BCOM SYLLABUS/DATA DRIVEN DECISION MAKING (BCOM BA )SEM-1 NEW.pdf",
+          },
+        ],
+
+        sem2: [
+          {
+            name: "Financial Accounting-II",
+            pdf: "syllabusData/BCOM SYLLABUS/FINANCIAL ACCOUNTNG-II(BCOM SEM-2)OLD.pdf",
+          },
+          {
+            name: "Financial Accounting-II (New)",
+            pdf: "syllabusData/BCOM SYLLABUS/FINANCIAL ACCOUNTING-I (BCOM SEM-1)NEW.pdf",
+          },
+          {
+            name: "Business Laws",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS LAWS (BCOM SEM-2)OLD.pdf",
+          },
+          {
+            name: "Business Laws (New)",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS LAWS (BCOM SEM-2)NEW.pdf",
+          },
+          { name: "programming With C & C++(CA)", pdf: "" },
+          {
+            name: "programming With C & C++(CA) (New)",
+            pdf: "syllabusData/BCOM SYLLABUS/Programming with C & C++ (SEM-2) NEW.pdf",
+          },
+          {
+            name: "Data Analytics and Essentials(BA)",
+            pdf: "syllabusData/BCOM SYLLABUS/DATA ANALYTICS  ESSENTIALS (BCOM.BA )SEM-2.pdf",
+          },
+          {
+            name: "Data Analytics and Essentials(BA) (New)",
+            pdf: "syllabusData/BCOM SYLLABUS/DATA ANALYTICS ESSENTIALS (BCOM BA SEM-2)NEW.pdf",
+          },
+        ],
+
+        sem3: [
+          {
+            name: "Advanced Accounting",
+            pdf: "syllabusData/BCOM SYLLABUS/ADVANCED ACCOUNTING (BCOM SEM-3)OLD.pdf",
+          },
+          {
+            name: "Business Statistics-I",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS STATISTICS-I (BCOM SEM-3).pdf",
+          },
+          {
+            name: "Relational Database Management System(CA)",
+            pdf: "syllabusData/BCOM SYLLABUS/RELATIONAL DATABASE MANAGEMENT SYSTEMS (BCOM SEM-3)OLD.pdf",
+          },
+          {
+            name: "Data Analytics Modeling(BA)",
+            pdf: "syllabusData/BCOM SYLLABUS/DATA ANALYTICS MODELING (BCOM.BA)SEM-3 OLD.pdf",
+          },
+        ],
+
+        sem4: [
+          {
+            name: "Income Tax ",
+            pdf: "syllabusData/BCOM SYLLABUS/INCOME TAX (BCOM SEM -4).pdf",
+          },
+          {
+            name: "Business Statistics-II",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS STATISTICS-II (BCOM SEM-4).pdf",
+          },
+          {
+            name: "Web Technologies (CA)",
+            pdf: "syllabusData/BCOM SYLLABUS/WEB TECHNOLOGIES (BCOM CA SEM-4)OLD.pdf",
+          },
+          {
+            name: "Forecasting & Predictive Analytics (BA)",
+            pdf: "syllabusData/BCOM SYLLABUS/FORECASTING & PREDICTIVE ANALYTICS (BCOM.BA)(SEM-4.pdf",
+          },
+        ],
+
+        sem5: [
+          {
+            name: " Cost Accounting",
+            pdf: "syllabusData/BCOM SYLLABUS/COST ACCOUNTING (BCOM SEM-5).pdf",
+          },
+          {
+            name: "Computerized Accounting",
+            pdf: "syllabusData/BCOM SYLLABUS/COMPUTERIZED ACCOUNTING (BCOM SEM-5).pdf",
+          },
+          {
+            name: "E-Commerce (CA)",
+            pdf: "syllabusData/BCOM SYLLABUS/E-COMMERCE (BCOM CA SEM-5) OLD.pdf",
+          },
+          {
+            name: "Advanced Data Visualization",
+            pdf: "syllabusData/BCOM SYLLABUS/ADVANCED DATA VISUALIZATION (BCOM BA)SEM-5.pdf",
+          },
+        ],
+
+        sem6: [
+          {
+            name: " Cost Control and Management Accounting",
+            pdf: "syllabusData/BCOM SYLLABUS/COST CONTROL AND MANAGEMENT ACCOUNTING (BCOM SEM-6).pdf",
+          },
+          {
+            name: "Theory and Practice of GST",
+            pdf: "syllabusData/BCOM SYLLABUS/THEORY AND PRACTICE OF GST (BCOM SEM-6).pdf",
+          },
+          {
+            name: "Multimedia Systems (CA)",
+            pdf: "syllabusData/BCOM SYLLABUS/MULTIMEDIA SYSTEMS (BCOM CA SE3M-6)OLD.pdf",
+          },
+          {
+            name: "Business Applications of Emerging Technologies (BA)",
+            pdf: "syllabusData/BCOM SYLLABUS/BUSINESS APPLICATIONS OF EMERGING TECHNOLOGIES (BCOM BA SEM-6)OLD.pdf",
+          },
+        ],
+      };
+
+      /* LOAD SUBJECTS */
+
+      function loadBCOMSubjects(branch) {
+        let container = document.getElementById("BCOMSubjects");
+        container.innerHTML = "";
+
+        let subjects = [];
+
+        if (branch === "all") {
+          for (let key in bcomSubjects) {
+            subjects = subjects.concat(bcomSubjects[key]);
+          }
+        } else {
+          subjects = bcomSubjects[branch] || [];
+        }
+
+        subjects.forEach((sub) => {
+          container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-primary btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+
+</div>
+`;
+        });
+      }
+
+      /* SEARCH */
+
+      function filterSubjects(value) {
+        let items = document.querySelectorAll(".subject-list .list-group-item");
+
+        items.forEach((item) => {
+          item.style.display = item.innerText
+            .toLowerCase()
+            .includes(value.toLowerCase())
+            ? "flex"
+            : "none";
+          b;
+        });
+      }
+
+      /* BRANCH FILTER */
+
+      function filterBranch(branch) {
+        loadBscSubjects(branch);
+      }
+
+      /* PAGE LOAD */
+
+      window.onload = function () {
+        loadBcomSubjects("all");
+      };
+
+      function downloadPDF(file) {
+        const link = document.createElement("a");
+        link.href = file;
+        link.download = file.split("/").pop(); // file name
+        link.click();
+      }
+
+      subjects.forEach((sub) => {
+        container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-success btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+</div>
+`;
+      });
+    </script>
+
+    <!-- BBA -->
+
+    <script>
+      function openPDF(file) {
+        document.getElementById("pdfFrame").src = file;
+        new bootstrap.Modal(document.getElementById("pdfModal")).show();
+      }
+
+      const bbaSubjects = {
+        sem1: [
+          {
+            name: "Principles of Management",
+            pdf: "syllabusData/bsc syllabus/computer science/programming in c (sem1)old.pdf",
+          },
+          {
+            name: "Basics of Marketing",
+            pdf: "syllabusData/bsc syllabus/computer science/programming in c++(sem-2)old.pdf",
+          },
+          {
+            name: "Business Economics",
+            pdf: "syllabusData/bsc syllabus/computer science/data structures with c++(sem-3)old.pdf",
+          },
+        ],
+
+        sem2: [
+          {
+            name: "Organizational Behavior",
+            pdf: "syllabusData/bsc syllabus/data science/Programming with C (sem-1).pdf",
+          },
+          {
+            name: "Business Statistics",
+            pdf: "syllabusData/bsc syllabus/data science/Problem Solving and Python Programming (sem-2).pdf",
+          },
+          {
+            name: "Financial Accounting",
+            pdf: "syllabusData/bsc syllabus/data science/Data Engineering with Python (sem-3).pdf",
+          },
+        ],
+
+        sem3: [
+          {
+            name: "Human Resource Management",
+            pdf: "syllabusData/bsc syllabus/mathematics/differential calculus (sem1)old.pdf",
+          },
+          {
+            name: "Information Technology for Business ",
+            pdf: "syllabusData/bsc syllabus/mathematics/differential equations (sem2)old.pdf",
+          },
+          {
+            name: "Financial Management",
+            pdf: "syllabusData/bsc syllabus/mathematics/real analysis (sem3)old.pdf",
+          },
+        ],
+
+        sem4: [
+          {
+            name: "Business Laws and Ethics",
+            pdf: "syllabusData/bsc syllabus/physics/Mechanics (sem-1).pdf",
+          },
+          {
+            name: " Market Research",
+            pdf: "syllabusData/bsc syllabus/physics/Thermal Physics (sem-2).pdf",
+          },
+          {
+            name: "Management Science",
+            pdf: "syllabusData/bsc syllabus/physics/Electromagnetic Theory (sem-3).pdf",
+          },
+        ],
+
+        sem5: [
+          {
+            name: "Financial Markets and Services(F)",
+            pdf: "syllabusData/bsc syllabus/statistics/descriptive statistics and probability ( sem 1)old.pdf",
+          },
+          {
+            name: "Brand Management (M)",
+            pdf: "syllabusData/bsc syllabus/statistics/probability distribution (sem 2) old.pdf",
+          },
+          {
+            name: "Organization Development(HR)",
+            pdf: "syllabusData/bsc syllabus/statistics/statistical methods and theory of estimation (sem 4)old.pdf",
+          },
+          {
+            name: "Analysis of  Investment in Financial Assets(F)",
+            pdf: "syllabusData/bsc syllabus/statistics/statistical inference (sem 4) old.pdf",
+          },
+          {
+            name: " Retail Management (M)",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-1 (sem-5)old.pdf",
+          },
+          {
+            name: "Performance Appraisal and Counseling (HR)",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-2 (sem 6)old.pdf",
+          },
+          {
+            name: "Insurance Services (F)",
+            pdf: "syllabusData/bsc syllabus/statistics/statistical inference (sem 4) old.pdf",
+          },
+          {
+            name: "Customer RelationshipManagement (M)",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-1 (sem-5)old.pdf",
+          },
+          {
+            name: " Compensation Management (HR)",
+            pdf: "syllabusData/bsc syllabus/statistics/applied statistics-2 (sem 6)old.pdf",
+          },
+        ],
+
+        sem6: [
+          {
+            name: "Banking (F)",
+            pdf: "syllabusData/bsc syllabus/botany/microbial diversity of lower plants(sem-1)old.pdf",
+          },
+          {
+            name: "Buyer Behavior (M)",
+            pdf: "syllabusData/bsc syllabus/botany/gymnosperms,taxonomy of angiosperms and ecology (sem-2)old.pdf",
+          },
+          {
+            name: "Leadership And Change Management(HR)",
+            pdf: "syllabusData/bsc syllabus/botany/plant anatomy and embryology (sem-3)old.pdf",
+          },
+          {
+            name: "Risk Analysis and Management(F)",
+            pdf: "syllabusData/bsc syllabus/botany/cell biology and plant physiology (sem-4)old.pdf",
+          },
+          {
+            name: "Advertising and Sales Promotion (M)",
+            pdf: "syllabusData/bsc syllabus/botany/horticulture (sem-5)old.pdf",
+          },
+          {
+            name: "Talent And Knowledge Management (HR)",
+            pdf: "syllabusData/bsc syllabus/botany/tissue culture and biotechnology(sem-6)old.pdf",
+          },
+          {
+            name: "International Finance (F)",
+            pdf: "syllabusData/bsc syllabus/botany/cell biology and plant physiology (sem-4)old.pdf",
+          },
+          {
+            name: "Rural Marketing (M)",
+            pdf: "syllabusData/bsc syllabus/botany/horticulture (sem-5)old.pdf",
+          },
+          {
+            name: "Employees Relations(HR)",
+            pdf: "syllabusData/bsc syllabus/botany/tissue culture and biotechnology(sem-6)old.pdf",
+          },
+        ],
+      };
+
+      /* LOAD SUBJECTS */
+
+      function loadbbaSubjects(branch) {
+        let container = document.getElementById("bbaSubjects");
+        container.innerHTML = "";
+
+        let subjects = [];
+
+        if (branch === "all") {
+          for (let key in bbaSubjects) {
+            subjects = subjects.concat(bbaSubjects[key]);
+          }
+        } else {
+          subjects = bbaSubjects[branch] || [];
+        }
+
+        subjects.forEach((sub) => {
+          container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-primary btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+
+</div>
+`;
+        });
+      }
+
+      /* SEARCH */
+
+      function filterSubjects(value) {
+        let items = document.querySelectorAll(".subject-list .list-group-item");
+
+        items.forEach((item) => {
+          item.style.display = item.innerText
+            .toLowerCase()
+            .includes(value.toLowerCase())
+            ? "flex"
+            : "none";
+          b;
+        });
+      }
+
+      /* BRANCH FILTER */
+
+      function filterBranch(branch) {
+        loadbbaSubjects(branch);
+      }
+
+      /* PAGE LOAD */
+
+      window.onload = function () {
+        loadbbaSubjects("all");
+      };
+
+      function downloadPDF(file) {
+        const link = document.createElement("a");
+        link.href = file;
+        link.download = file.split("/").pop(); // file name
+        link.click();
+      }
+
+      subjects.forEach((sub) => {
+        container.innerHTML += `
+<div class="list-group-item d-flex justify-content-between">
+${sub.name}
+<button class="btn btn-success btn-sm"
+onclick="downloadPDF('${sub.pdf}')">
+Download
+</button>
+</div>
+`;
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
